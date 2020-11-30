@@ -62,7 +62,7 @@ struct retro_core_option_definition option_defs_us[] = {
    {
       "genesis_plus_gx_system_hw",
       "系统硬件",
-      "以指定的模拟硬件运行游戏，'自动'会根据当前游戏选择最合适的系统。",
+      "以指定的模拟硬件运行游戏, '自动'会根据当前游戏选择最合适的系统. ",
       {
          { "auto",                 "自动"               },
          { "sg-1000",              "SG-1000"            },
@@ -79,8 +79,8 @@ struct retro_core_option_definition option_defs_us[] = {
    {
       "genesis_plus_gx_region_detect",
       "系统制式",
-      "指定系统区域制式，除Game Gear外。'PAL'是50hz而'NTSC'是60hz。\n"
-      "如果选择了不正确的制式，游戏可能比正常运行速度偏快或者偏慢。",
+      "指定系统区域制式, 除Game Gear外. 'PAL'是50hz而'NTSC'是60hz. \n"
+      "如果选择了不正确的制式, 游戏可能比正常运行速度偏快或者偏慢. ",
       {
          { "auto",    "自动"   },
          { "ntsc-u",  "NTSC-U" },
@@ -93,8 +93,8 @@ struct retro_core_option_definition option_defs_us[] = {
    {
       "genesis_plus_gx_force_dtack",
       "系统锁定",
-      "模拟真实硬件上执行非法地址访问时发生的系统锁定。\n"
-      "此设置应该只在运行特定演示或者自制游戏时关闭，这些游戏可能依赖非法指令来完成操作。",
+      "模拟真实硬件上执行非法地址访问时发生的系统锁定. \n"
+      "此设置应该只在运行特定演示或者自制游戏时关闭, 这些游戏可能依赖非法指令来完成操作. ",
       {
          { "enabled",  "启用" },
          { "disabled", "禁用" },
@@ -105,8 +105,8 @@ struct retro_core_option_definition option_defs_us[] = {
    {
       "genesis_plus_gx_bios",
       "系统启动ROM",
-      "使用官方BIOS/引导程序，如果在RetroArch系统目录中存在的话。\n"
-      "显示机种特定启动动画，然后运行载入的游戏。",
+      "使用官方BIOS/引导程序, 如果在RetroArch系统目录中存在的话. \n"
+      "显示机种特定启动动画, 然后运行载入的游戏. ",
       {
          { "disabled", "禁用" },
          { "enabled",  "启用" },
@@ -117,8 +117,8 @@ struct retro_core_option_definition option_defs_us[] = {
    {
       "genesis_plus_gx_bram",
       "CD系统BRAM",
-      "运行Sega CD游戏时，指定是在每个区域的游戏（按区域）中共享存档文件，还是为每个游戏（按游戏）单独保存存档。 \n"
-      "注意：Sega CD内部存储容量有限，只够保存几个游戏。为了避免存储空间不够用，建议选择‘按游戏’。",
+      "运行Sega CD游戏时, 指定是在每个区域的游戏 (按区域) 中共享存档文件, 还是为每个游戏 (按游戏) 单独保存存档.  \n"
+      "注意：Sega CD内部存储容量有限, 只够保存几个游戏. 为了避免存储空间不够用, 建议选择‘按游戏’. ",
       {
          { "per bios", "按区域" },
          { "per game", "按游戏" },
@@ -129,9 +129,9 @@ struct retro_core_option_definition option_defs_us[] = {
    {
       "genesis_plus_gx_addr_error",
       "68K寻址错误",
-      "MD的CPU（摩托罗拉68000）在执行未对齐内存访问时会产生一个寻址错误（宕机）。\n"
-      "启用此设置模拟该行为。此设置应该只在运行修改版ROM时关闭，\n"
-      "因为这些ROM通常是在不精确的模拟器上修改的，可能依赖于无效的内存访问才能正确运行。",
+      "MD的CPU (摩托罗拉68000) 在执行未对齐内存访问时会产生一个寻址错误 (宕机) . \n"
+      "启用此设置模拟该行为. 此设置应该只在运行修改版ROM时关闭, \n"
+      "因为这些ROM通常是在不精确的模拟器上修改的, 可能依赖于无效的内存访问才能正确运行. ",
       {
          { "enabled",  "启用" },
          { "disabled", "禁用" },
@@ -142,8 +142,8 @@ struct retro_core_option_definition option_defs_us[] = {
    {
       "genesis_plus_gx_lock_on",
       "卡带锁定",
-      "锁定技术是MD的一项功能，该功能允许老游戏连接到特殊卡带的传输端口上，进行扩展游戏或者实现附加功能。\n"
-      "此设置指定模拟何种类型的‘锁定’功能。RetroArch系统目录中必须有相对应的BIOS文件。",
+      "锁定技术是MD的一项功能, 该功能允许老游戏连接到特殊卡带的传输端口上, 进行扩展游戏或者实现附加功能. \n"
+      "此设置指定模拟何种类型的‘锁定’功能. RetroArch系统目录中必须有相对应的BIOS文件. ",
       {
          { "disabled",            "禁用" },
          { "game genie",          "Game Genie" },
@@ -155,8 +155,8 @@ struct retro_core_option_definition option_defs_us[] = {
    },
    {
       "genesis_plus_gx_ym2413",
-      "Master System FM音源（YM2413）",
-      "启用Sega Mark III/Master System FM声音单元的模拟，以增强某些游戏的声音输出。",
+      "Master System FM音源 (YM2413) ",
+      "启用Sega Mark III/Master System FM声音单元的模拟, 以增强某些游戏的声音输出. ",
       {
          { "auto",     "自动" },
          { "disabled", "禁用" },
@@ -169,13 +169,13 @@ struct retro_core_option_definition option_defs_us[] = {
       "genesis_plus_gx_ym2612",
       "Mega Drive / Genesis FM音源",
 #ifdef HAVE_YM3438_CORE
-      "选择模拟MD/Genesis FM合成器（主声音发生器）的方式。\n"
-      "'MAME'方式较快，在绝大多数系统上都可以全速运行。\n"
-      "'Nuked'方式较精确，声音质量更高，但是需要更高的CPU性能。\n"
-      "'YM2612'芯片由早期MD1型机使用，'YM3438'由后期MD机型使用。",
+      "选择模拟MD/Genesis FM合成器 (主声音发生器) 的方式. \n"
+      "'MAME'方式较快, 在绝大多数系统上都可以全速运行. \n"
+      "'Nuked'方式较精确, 声音质量更高, 但是需要更高的CPU性能. \n"
+      "'YM2612'芯片由早期MD1型机使用, 'YM3438'由后期MD机型使用. ",
 #else
-      "选择模拟MD/Genesis FM合成器（主声音发生器）的方式。\n"
-      "'YM2612'芯片由早期MD1型机使用，'YM3438'由后期MD机型使用。",
+      "选择模拟MD/Genesis FM合成器 (主声音发生器) 的方式. \n"
+      "'YM2612'芯片由早期MD1型机使用, 'YM3438'由后期MD机型使用. ",
 #endif
       {
          { "mame (ym2612)",          "MAME (YM2612)" },
@@ -192,7 +192,7 @@ struct retro_core_option_definition option_defs_us[] = {
    {
       "genesis_plus_gx_sound_output",
       "输出声道",
-      "选择立体声或单声道声音输出。",
+      "选择立体声或单声道声音输出. ",
       {
          { "stereo", "立体声" },
          { "mono",   "单声道" },
@@ -203,8 +203,8 @@ struct retro_core_option_definition option_defs_us[] = {
    {
       "genesis_plus_gx_psg_preamp",
       "PSG预放大级别",
-      "设置的SN76496四通道可编程声音发生器的声音预放大级别，\n"
-      "此芯片用于Master System、Game Gear和MD/Genesis。",
+      "设置的SN76496四通道可编程声音发生器的声音预放大级别, \n"
+      "此芯片用于Master System、Game Gear和MD/Genesis. ",
       {
          { "0",   NULL },
          { "5",   NULL },
@@ -254,7 +254,7 @@ struct retro_core_option_definition option_defs_us[] = {
    {
       "genesis_plus_gx_fm_preamp",
       "FM预放大级别",
-      "设置FM音频芯片的预放大级别，此芯片用于Sega Mark III/Master System。",
+      "设置FM音频芯片的预放大级别, 此芯片用于Sega Mark III/Master System. ",
       {
          { "0",   NULL },
          { "5",   NULL },
@@ -304,7 +304,7 @@ struct retro_core_option_definition option_defs_us[] = {
    {
       "genesis_plus_gx_audio_filter",
       "音频过滤",
-      "启用音频低通滤镜，以更好地模拟MD1型机的声音特性。",
+      "启用音频低通滤镜, 以更好地模拟MD1型机的声音特性. ",
       {
          { "disabled", "禁用" },
          { "low-pass", "低通滤镜" },
@@ -315,8 +315,8 @@ struct retro_core_option_definition option_defs_us[] = {
    {
       "genesis_plus_gx_lowpass_range",
       "低通滤镜强度%",
-      "设置低通滤镜的截断频率。\n"
-      "值越高，可察觉到的过滤强度越高，因为更宽范围的高频扩展被减弱了。",
+      "设置低通滤镜的截断频率. \n"
+      "值越高, 可察觉到的过滤强度越高, 因为更宽范围的高频扩展被减弱了. ",
       {
          { "5",  NULL },
          { "10", NULL },
@@ -345,7 +345,7 @@ struct retro_core_option_definition option_defs_us[] = {
    {
       "genesis_plus_gx_audio_eq_low",
       "EQ低频",
-      "调整内置音频均衡器的低音频带。",
+      "调整内置音频均衡器的低音频带. ",
       {
          { "0",   NULL },
          { "5",   NULL },
@@ -375,7 +375,7 @@ struct retro_core_option_definition option_defs_us[] = {
    {
       "genesis_plus_gx_audio_eq_mid",
       "EQ中频",
-      "调整内置音频均衡器的中音频带。",
+      "调整内置音频均衡器的中音频带. ",
       {
          { "0",   NULL },
          { "5",   NULL },
@@ -405,7 +405,7 @@ struct retro_core_option_definition option_defs_us[] = {
    {
       "genesis_plus_gx_audio_eq_high",
       "EQ高频",
-      "调整内置音频均衡器的高音频带。",
+      "调整内置音频均衡器的高音频带. ",
       {
          { "0",   NULL },
          { "5",   NULL },
@@ -473,7 +473,7 @@ struct retro_core_option_definition option_defs_us[] = {
    {
       "genesis_plus_gx_blargg_ntsc_filter",
       "Blargg NTSC滤镜",
-      "应用一个视频滤镜来模拟不同的NTSC电视信号。",
+      "应用一个视频滤镜来模拟不同的NTSC电视信号. ",
       {
          { "disabled",   "禁用" },
          { "monochrome", "单色" },
@@ -487,7 +487,7 @@ struct retro_core_option_definition option_defs_us[] = {
    {
       "genesis_plus_gx_lcd_filter",
       "LCD鬼影滤镜",
-      "应用一个图像鬼影滤镜，来模拟Game Gear和Genesis Nomad的LCD屏幕显示特性。",
+      "应用一个图像鬼影滤镜, 来模拟Game Gear和Genesis Nomad的LCD屏幕显示特性. ",
       {
          { "disabled", "禁用" },
          { "enabled",  "启用" },
@@ -498,8 +498,8 @@ struct retro_core_option_definition option_defs_us[] = {
    {
       "genesis_plus_gx_overscan",
       "边界",
-      "启用此设置显示屏幕上下或者左右的过扫描区域。\n"
-      "这些区域通常被标准电视的边框隐藏了。",
+      "启用此设置显示屏幕上下或者左右的过扫描区域. \n"
+      "这些区域通常被标准电视的边框隐藏了. ",
       {
          { "disabled",   "禁用" },
          { "top/bottom", "上/下" },
@@ -512,8 +512,8 @@ struct retro_core_option_definition option_defs_us[] = {
    {
       "genesis_plus_gx_gg_extra",
       "扩展Game Gear屏幕",
-      "强制Game Gear游戏以SMS模式运行，提高分辨率到256x192。\n"
-      "可能会显示额外的内容，但是通常是显示一个含有无效图像数据的边框。",
+      "强制Game Gear游戏以SMS模式运行, 提高分辨率到256x192. \n"
+      "可能会显示额外的内容, 但是通常是显示一个含有无效图像数据的边框. ",
       {
          { "disabled", "禁用" },
          { "enabled",  "启用" },
@@ -524,8 +524,8 @@ struct retro_core_option_definition option_defs_us[] = {
    {
       "genesis_plus_gx_aspect_ratio",
       "内核提供宽高比",
-      "选择期望的显示宽高比。\n"
-      "此项设置只有当RetroArch的宽高比设为‘内核提供’时有效。",
+      "选择期望的显示宽高比. \n"
+      "此项设置只有当RetroArch的宽高比设为‘内核提供’时有效. ",
       {
          { "auto",     "自动" },
          { "NTSC PAR", "NTSC像素宽高比" },
@@ -536,10 +536,10 @@ struct retro_core_option_definition option_defs_us[] = {
    {
       "genesis_plus_gx_render",
       "隔行模式2输出",
-      "隔行模式2允许MD/Genesis在每帧绘制额外的扫描线，输出双倍高度的图像（320x448）\n"
-      "此功能由'Sonic the Hedgehog 2'和'Combat Cars'多人游戏模式使用。\n"
-      "'双场'模拟原始硬件，输出更锐利的图像同时伴随抖动/隔行扫描效果。\n"
-      "'单场'应用一个去隔行滤镜，产生稳定的图像但是可能导致轻微模糊。",
+      "隔行模式2允许MD/Genesis在每帧绘制额外的扫描线, 输出双倍高度的图像 (320x448) \n"
+      "此功能由'Sonic the Hedgehog 2'和'Combat Cars'多人游戏模式使用. \n"
+      "'双场'模拟原始硬件, 输出更锐利的图像同时伴随抖动/隔行扫描效果. \n"
+      "'单场'应用一个去隔行滤镜, 产生稳定的图像但是可能导致轻微模糊. ",
       {
          { "single field", "Single Field" },
          { "double field", "Double Field" },
@@ -550,7 +550,7 @@ struct retro_core_option_definition option_defs_us[] = {
    {
       "genesis_plus_gx_gun_cursor",
       "显示光枪准心",
-      "在使用'MD Menacer', 'MD Justifiers'和'MS Light Phaser'输入设备时显示光枪准心。",
+      "在使用'MD Menacer', 'MD Justifiers'和'MS Light Phaser'输入设备时显示光枪准心. ",
       {
          { "disabled", "禁用" },
          { "enabled",  "启用" },
@@ -561,7 +561,7 @@ struct retro_core_option_definition option_defs_us[] = {
    {
       "genesis_plus_gx_gun_input",
       "光枪输入",
-      "使用鼠标控制的‘光枪’或者‘触屏’输入。",
+      "使用鼠标控制的‘光枪’或者‘触屏’输入. ",
       {
          { "lightgun",    "光枪" },
          { "touchscreen", "触屏" },
@@ -572,7 +572,7 @@ struct retro_core_option_definition option_defs_us[] = {
    {
       "genesis_plus_gx_invert_mouse",
       "鼠标Y轴反向",
-      "使用'MD鼠标'输入设备时反向Y轴。",
+      "使用'MD鼠标'输入设备时反向Y轴. ",
       {
          { "disabled", "禁用" },
          { "enabled",  "启用" },
@@ -584,7 +584,7 @@ struct retro_core_option_definition option_defs_us[] = {
    {
       "genesis_plus_gx_overclock",
       "CPU速度",
-      "对模拟CPU进行超频。可以减少拖慢，但可能导致其他问题。",
+      "对模拟CPU进行超频. 可以减少拖慢, 但可能导致其他问题. ",
       {
          { "100%", NULL },
          { "125%", NULL },
@@ -599,8 +599,8 @@ struct retro_core_option_definition option_defs_us[] = {
    {
       "genesis_plus_gx_no_sprite_limit",
       "移除每扫描线活动块数量限制",
-      "移除每扫描线的8个（Master System）或20个（MD/Genesis）活动块数量硬件限制。\n"
-      "可以减少闪烁，但是可能导致视觉效果不正常，因为有些游戏使用此限制来产生特殊效果。",
+      "移除每扫描线的8个 (Master System) 或20个 (MD/Genesis) 活动块数量硬件限制. \n"
+      "可以减少闪烁, 但是可能导致视觉效果不正常, 因为有些游戏使用此限制来产生特殊效果. ",
       {
          { "disabled", "禁用" },
          { "enabled",  "启用" },
